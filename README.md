@@ -1,7 +1,6 @@
-# Spree Wishlist
+# Spree Wishlist - Bootstrap
 
-[![Build Status](https://api.travis-ci.org/spree/spree_wishlist.png?branch=master)](https://travis-ci.org/spree/spree_wishlist)
-[![Code Climate](https://codeclimate.com/github/spree/spree_wishlist.png)](https://codeclimate.com/github/spree/spree_wishlist)
+This fork converts the Spree Wishlist extension to use Bootstrap. Use branch 2-3-bootstrap. 
 
 The Spree Wishlist extension enables multiple wishlists per user, as well as managing those as public (sharable) and private. It also includes the ability to notify a friend via email of a recommended product.
 
@@ -9,7 +8,7 @@ The Spree Wishlist extension enables multiple wishlists per user, as well as man
 
 Add the following to your `Gemfile`
 ```ruby
-gem 'spree_wishlist', github: 'spree/spree_wishlist', branch: 'master'
+gem 'spree_wishlist', github: 'robin-solutions/spree_wishlist', branch: '2-3-bootstrap'
 gem 'spree_email_to_friend', github: 'spree/spree_email_to_friend', branch: 'master'
 ```
 
@@ -42,6 +41,7 @@ Starting point:
 * Clone your repo
 * Run `bundle install`
 * Run `bundle exec rake test_app` to create the test application in `spec/test_app`
+* You need PhantomJS in your path to pass the specs
 * Make your changes
 * Ensure specs pass by running `bundle exec rspec spec`
 * Submit your pull request
