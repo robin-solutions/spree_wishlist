@@ -1,4 +1,8 @@
 <%= form_for @wishlist, :html => {:class => 'ajax_form', :id => 'change_wishlist_accessibility'} do |f| %>
-  <%= f.radio_button :is_private, true %>&nbsp;<%= Spree.t(:private) %>
-  <%= f.radio_button :is_private, false %>&nbsp;<%= Spree.t(:public) %>
+  <label class="checkbox-inline">
+    <%= f.radio_button :is_private, true %> <%= Spree.t(:private) %>
+  </label>
+  <label class="checkbox-inline">
+    <%= f.radio_button :is_private, false %> <%= Spree.t(:public) %>
+  </label>
 <% end -%>
